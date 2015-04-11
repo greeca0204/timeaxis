@@ -1,0 +1,83 @@
+{{include file='header.html'}}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<table width="100%" align="center" cellspacing="1" cellpadding="3" class="i_table">
+  <tr>
+    <td class="head" colspan="2"><b>操作菜单</b></td>
+  </tr>
+  <tr>
+    <td class="b_title">
+    	<a href="event.php?action=new" target="_self">添加事件信息</a>&nbsp;
+    	<a href="event.php" target="_self">事件信息管理</a>
+    </td>
+  </tr>
+</table>
+<br />
+<form name="fmEdit" id="fmEdit" method="post" action="event.php?action=save" enctype="multipart/form-data">
+	<input type="hidden" name="id" id="id" value="{{$event.id}}" />
+	<table width="70%" align="center" cellspacing="1" cellpadding="3" class="i_table">
+		<tr>
+			<td colspan="2" class="head">事件信息管理</td>
+        </tr>
+        <tr>
+			<td width="20%" class="b">事件名称：</td>
+			<td class="b">
+				<input type="text" name="name" id="name" value="{{$event.name}}"  class="frminput" />
+			</td>
+	  	</tr>
+		<tr>
+			<td width="20%" class="b">事件配图：</td>
+            <td class="b_sel">        
+				<input name="imgurl" type="file">
+				<input type="hidden" name="hasimg" value="{{$event.img}}" />  
+		  </td>
+	  	</tr>
+        {{if $event.img != ''}}
+        <tr>
+			<td width="20%" class="b">事件配图：</td>
+            <td class="b_sel">        
+				<img src="../{{$event.img}}" width="341" height="341" alt="" />
+		  </td>
+	  	</tr>
+        {{/if}} 
+		<tr>
+			<td width="20%" class="b">事件介绍：</td>
+			<td class="b_sel">
+				<textarea name="content1"  id="content1" style="width:500px;height:80px;resize:none;">{{$event.intro}}</textarea>
+		  </td>
+	  	</tr>
+        <tr>
+			<td width="20%" class="b">年：</td>
+			<td class="b">
+				<input type="text" name="year" id="year"  class="frminput"   value="{{$event.year}}" />
+		  </td>
+	  	</tr>
+	  	<tr>
+			<td width="20%" class="b">月：</td>
+			<td class="b">
+				<input type="text" name="month" id="month"  class="frminput"   value="{{$event.month}}" />
+		  </td>
+	  	</tr>
+	  	<tr>
+			<td width="20%" class="b">日：</td>
+			<td class="b">
+				<input type="text" name="day" id="day"  class="frminput"   value="{{$event.day}}" />
+		  </td>
+	  	</tr>
+		<tr>
+			<td width="20%" class="b">样式：</td>
+			<td class="sel">
+				<select id="type" name="type">
+					<option value="1" {{if $event.type==1}}selected="selected"{{/if}}>内页样式</option>
+					<option value="0" {{if $event.type==0}}selected="selected"{{/if}}>年份页样式</option>
+				</select>
+		  </td>
+	  	</tr>
+		<tr>
+			<td colspan="2" class="b">
+				<input type="submit" value="提交">
+				<input type="reset" value="重置">
+			</td>
+		</tr>
+	</table>
+</form>
+{{include file='footer.html'}}
