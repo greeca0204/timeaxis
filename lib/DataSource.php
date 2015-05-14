@@ -59,17 +59,10 @@ class DataSource {
 class DefaultDataSource extends DataSource {
 
 	function DefaultDataSource(){
-		/*
 		$this->host = "localhost";
 		$this->user = "root";
 		$this->password = "";
-		$this->dbName = "timeaxis";
-		$this->charset = "utf8";
-		*/
-		$this->host = "hdm-128.hichina.com";
-		$this->user = "hdm1280189";
-		$this->password = "Orange211";
-		$this->dbName = "hdm1280189_db";
+		$this->dbName = "";
 		$this->charset = "utf8";
 	}
 

@@ -1,7 +1,5 @@
-<?php /* Smarty version 2.6.18, created on 2015-04-05 22:32:22
+<?php /* Smarty version 2.6.18, created on 2015-04-06 00:13:11
          compiled from editEvent.html */ ?>
-<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'editEvent.html', 51, false),)), $this); ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => 'header.html', 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
@@ -56,13 +54,6 @@ unset($_smarty_tpl_vars);
 			<td class="b_sel">
 				<textarea name="content1"  id="content1" style="width:500px;height:80px;resize:none;"><?php echo $this->_tpl_vars['event']['intro']; ?>
 </textarea>
-		  </td>
-	  	</tr>
-        <tr>
-			<td width="20%" class="b">发生时间：</td>
-			<td class="b">
-				<input type="text" name="sdate" id="sdate"  class="frminput"  onClick="return Calendar('sdate');" value="<?php echo ((is_array($_tmp=$this->_tpl_vars['event']['happenTime'])) ? $this->_run_mod_handler('date_format', true, $_tmp, '%Y-%m-%d') : smarty_modifier_date_format($_tmp, '%Y-%m-%d')); ?>
-" />
 		  </td>
 	  	</tr>
         <tr>

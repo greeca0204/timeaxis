@@ -1,6 +1,6 @@
 ﻿<?php
 	//$db=mysql_connect("localhost","root","");
-	$db=mysql_connect("hdm-128.hichina.com","hdm1280189","Orange211");
+	$db=mysql_connect("localhost","root","root");
 	//$sqlname="timeaxis";
 	$sqlname="hdm1280189_db";
 	mysql_select_db($sqlname,$db);
@@ -46,7 +46,7 @@
 <div class="bg"><img src="images/bg04.jpg" width="100%" /></div>
 
 <header class="top" id="top">
-	<h1><em>铁路百年大记事</em></h1>
+	<div style="width:320px;height:72px;float:left;"><img src="images/logo.png" width="320" height="72" /></div>
 	    <div class="select">
     <form name="form" action="search.php" method="post">
 <script>
@@ -72,7 +72,7 @@ inputText(inputArr[i],"onfocus","onblur")
 </header>
 
 <section id="timeline" class="timeline">
-	<div id="line" class="line_white"></div>
+<div id="line" class="line_white"></div>
 	<div id="impress">
 		<div id="timeList">
 			<div class="step year" data-x="-600" data-y="0" data-scale ="0.5" id="0">
