@@ -1,6 +1,6 @@
 ﻿<?php
 	//$db=mysql_connect("localhost","root","");
-	$db=mysql_connect("localhost","root","root");
+	$db=mysql_connect("hdm-128.hichina.com","hdm1280189","Orange211");
 	//$sqlname="timeaxis";
 	$sqlname="hdm1280189_db";
 	mysql_select_db($sqlname,$db);

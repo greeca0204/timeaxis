@@ -3,11 +3,11 @@
 /**
 * ±ķ˵޸
 */
-$dbhost = 'localhost';			// ݿ
+$dbhost = 'hdm-128.hichina.com';			// ݿ
 
 
-$dbuser = '';			// ݿû
-$dbpw = '';				// ݿ
+$dbuser = 'hdm1280189';			// ݿû
+$dbpw = 'Orange211';				// ݿ
 $dbname = 'hdm1280189_db';			// ݿ
 $database = 'mysql';			// ݿ
 $PW = 'tbl_';					// ַ
