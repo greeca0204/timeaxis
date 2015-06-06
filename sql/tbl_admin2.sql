@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : hdm-128.hichina.com_3306
+Source Server         : isorange
 Source Server Version : 50148
 Source Host           : hdm-128.hichina.com:3306
 Source Database       : hdm1280189_db
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50148
 File Encoding         : 65001
 
-Date: 2015-05-12 11:42:37
+Date: 2015-06-06 16:52:51
 */
 
 SET FOREIGN_KEY_CHECKS=0;
